@@ -18,7 +18,7 @@ app.config['STATIC_FOLDER'] = 'static'
 logo_path = os.path.join(app.config['STATIC_FOLDER'], 'pananyaan abah.jpg')
 
 # Langkah 1: Persiapan Data
-data = pd.read_csv('lh11k.csv')
+data = pd.read_csv('finalwc.csv')
 
 # Langkah 2: Pra-Pemrosesan Data
 tokenizer = Tokenizer()
