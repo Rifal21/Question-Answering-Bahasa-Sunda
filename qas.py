@@ -18,7 +18,7 @@ app.config['STATIC_FOLDER'] = 'static'
 logo_path = os.path.join(app.config['STATIC_FOLDER'], 'pananyaan abah.jpg')
 
 # Langkah 1: Persiapan Data
-data = pd.read_csv('finalwc.csv')
+data = pd.read_csv('QASSND50k.csv')
 
 # Langkah 2: Pra-Pemrosesan Data
 tokenizer = Tokenizer()
@@ -99,6 +99,15 @@ def predict_answer(question, threshold=0.5):
 
     return answer, best_context
 
+
+# def compute_similarity(question, context):
+#     question_words = set(question.lower().split())
+#     context_words = set(context.lower().split())
+
+#     # Hitung jumlah kata yang cocok antara pertanyaan dan konteks
+#     matched_words = question_words.intersection(context_words)
+
+#     return len(matched_words)
 
 def compute_similarity(question, context):
     question_words = set(question.lower().split())
