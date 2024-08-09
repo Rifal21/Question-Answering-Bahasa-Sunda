@@ -13,3 +13,5 @@ Sistem hanya membahas 5 kategori penelitian yang mengeluarkan jawaban leres atau
 tolong pengembang selanjutnya tambahkan kategori yang dibahas dan dinamiskan dataset.
 
 sebelum clone source code, tolong follow dan stars dulu project nya, serta fork project untuk update project selanjutnya.
+
+# install python di device anda
